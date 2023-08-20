@@ -1,0 +1,264 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+body{
+
+    color: white;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background:transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+}
+.logo{
+    position: relative;
+    font-size: 30px;
+    color:white;
+    text-decoration: none;
+    font-weight: 600;
+}
+.logo::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:#040709;
+   animation: showright 1s ease forwards;
+   animation-delay: 0.4s;
+}
+.navigation a{
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: 0.3s;
+}
+.navigation a:hover{
+    color: gray;
+    padding: 2px 4px;
+}
+.navigation a.active{
+    color:cadetblue;
+}
+.home{
+    height: 100vh;
+    display: flex;
+    background:linear-gradient(rgb(0,0,0,7),rgb(0,0,0,0.5)),url(OIP\ \(2\).jpg);
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    padding: 0 10%;
+}
+.Homecontent{
+    
+    max-width: 600px;
+}
+.Homecontent h1{
+    position: relative;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.Homecontent h1::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:#040709;
+   animation: showright 1s ease forwards;
+   animation-delay: 1s;
+}
+.Homecontent h5{
+    position: relative;
+    font-size: 25px;
+    font-weight: 700;
+    color: aqua;
+}
+.Homecontent h5::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:#04080A;
+   animation: showright 1s ease forwards;
+   animation-delay: 1.3s;
+}
+.Homecontent p{
+    position: relative;
+    font-size: 16px;
+    color: white;
+    margin: 20px 0 40px;
+}
+.Homecontent p::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #060B0E;
+   animation: showright 1s ease forwards;
+   animation-delay: 1.6s;
+}
+.Homecontent .btnbox{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+   
+}
+.Homecontent .btnbox::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #070E12;
+   animation: showright 1s ease forwards;
+   animation-delay: 1.9s;
+   z-index: 2;
+}
+.btnbox a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  width: 150px;
+  height: 100%;
+  background: lightskyblue;
+  border: 2px solid lightskyblue;
+  border-radius: 8px;
+  font-size: 19px;
+  color: black;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+  z-index: 1;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.btnbox a:hover{
+    color:aqua;
+}
+.btnbox a:nth-child(2){
+    background: transparent;
+    color: white;
+}
+.btnbox a:nth-child(2):hover{
+    color: white;
+}
+.btnbox a:nth-child(2)::before{
+    background: aqua;
+}
+.btnbox a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: aqua;
+    z-index: -1;
+    transition: 0.5s;
+}
+.btnbox a:hover::before{
+    width: 100%;
+}
+/* social media link*/
+.social{
+    position: absolute;
+    bottom: 40px;
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+.social::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:#091217;
+   animation: showright 1s ease forwards;
+   animation-delay: 2.2s;
+   z-index: 2;
+}
+.social a{
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid gray;
+    border-radius: 50%;
+    font-size: 20px;
+    color: gray;
+    text-decoration: none;
+     z-index: 1;
+     overflow: hidden;
+     transition: 0.5s;
+}
+.social a:hover{
+    color:black;
+}
+.social a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background:gray;
+    z-index: -1;
+    transition: 0.5s;
+}
+.social a:hover::before{
+    width: 100%;
+
+}
+/*home image activation*/
+.imgaehome{
+    position: absolute;
+    top: 0;
+    right: 30px;
+    width: 500px;
+    height: 70%;
+    margin-top: 70px;
+    background: transparent;
+    transition: 3s;
+
+}
+
+.imgaehome:hover{
+    background:#172837;
+    opacity: 0.8;
+}
+
+/* animation */
+@keyframes showright{
+    100%{
+        width: 0;
+    }
+}
